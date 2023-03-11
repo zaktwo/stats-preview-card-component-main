@@ -88,6 +88,11 @@ min-width: 100%;
  border-radius: 1rem;
  overflow: hidden;
 }
+picture > img{
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+}
 article{
   display: flex;
   justify-content: center;
@@ -101,11 +106,34 @@ article{
   align-items: center;
   flex-direction: column;
 }
+.stats *{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 20px;
 }
+
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (min-width:500px){
+  main{
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+
+  }
+  picture{
+    order: 2;
+  }
+  .stats{
+    order: 1;
+    padding: 20px;
+  }
 }
