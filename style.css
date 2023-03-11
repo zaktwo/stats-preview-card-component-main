@@ -3,7 +3,16 @@
                     Variables
 ================================================*/
 :root{
+--Very-dark-blue-main-background: hsl(233, 47%, 7%);
+--Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+--Soft-violet-accent: hsl(277, 64%, 61%);
 
+--white-main-heading-stats: hsl(0, 0%, 100%);
+--Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+
+--font-familly-inter:'Inter', sans-serif;
+--font-familly-lexend:'Lexend Deca', sans-serif;
 }
 /*================================================
                     CSS Reset
@@ -57,5 +66,46 @@
   /*================================================
                     Shared CSS 
    ================================================*/
+html{
+  font-family: var(--font-familly-inter);
+  font-size: 15px;
+  background-color: var(--Very-dark-blue-main-background);
+  color: var(--Slightly-transparent-white-main-paragraph);
+  margin: 20%;
+}
 
-   
+  /*================================================
+                     CSS styles
+   ================================================*/
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 14px 7px #8E8E8E; 
+box-shadow: 0px 0px 14px 7px #8E8E8E;
+min-width: 100%;
+ border-radius: 1rem;
+ overflow: hidden;
+}
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
