@@ -66,12 +66,12 @@
   /*================================================
                     Shared CSS 
    ================================================*/
-html{
+body{
   font-family: var(--font-familly-inter);
   font-size: 15px;
   background-color: var(--Very-dark-blue-main-background);
   color: var(--Slightly-transparent-white-main-paragraph);
-  margin: 20%;
+  margin: 5%;
 }
 
   /*================================================
@@ -121,7 +121,7 @@ article{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media (min-width:776px){
+@media (min-width:724px){
   main{
     display: flex;
     
@@ -134,17 +134,24 @@ article{
   picture{
     order: 2;
     flex-basis: 50%;
-    background-size: cover;
+    
+    
   }
   picture > img{
     display: block;
     width: 100%;
     height: auto;
-   
+    object-fit : cover;
   }
   article{
     flex-basis: 50%;
     order: 1;
     padding: 20px;
+  }
+  .stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
