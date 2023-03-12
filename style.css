@@ -124,19 +124,23 @@ article{
 @media (min-width:776px){
   main{
     display: flex;
+    
+    
+  }
+  .wrapper{
+    display: flex;
     flex-direction: row;
-    justify-self: end;
-
   }
   picture{
     order: 2;
     flex-basis: 50%;
-    
+    background-size: cover;
   }
   picture > img{
     display: block;
     width: 100%;
     height: auto;
+   
   }
   article{
     flex-basis: 50%;
