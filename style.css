@@ -121,7 +121,7 @@ article{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media (min-width:500px){
+@media (min-width:776px){
   main{
     display: flex;
     flex-direction: row;
@@ -131,7 +131,7 @@ article{
   picture{
     order: 2;
     flex-basis: 50%;
-    justify-content: stretch;
+    
   }
   picture > img{
     display: block;
