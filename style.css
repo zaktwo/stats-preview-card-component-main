@@ -95,7 +95,7 @@ picture {
  
 }
 picture::after{
-  
+  background-color: hsla(277, 64%, 61%,0.5);
 }
 .overlay{
   background-color: hsla(277, 64%, 61%,0.5);
