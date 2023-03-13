@@ -87,9 +87,12 @@ box-shadow: 0px 0px 14px 7px #8E8E8E;
 min-width: 100%;
  border-radius: 1rem;
  overflow: hidden;
+ background-color: var(--Dark-desaturated-blue-card-background);
+ 
 }
 picture {
  flex-basis: 50%;
+ 
 }
 article{
   display: flex;
@@ -98,6 +101,7 @@ article{
   flex-direction: column;
   flex-basis: 50%;
   padding: 2rem;
+  justify-self: stretch;
 }
 
 article *{
@@ -120,31 +124,22 @@ article *{
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .stats-title{
   color: var(--Slightly-transparent-white-stat-headings);
 }
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  margin-top: 20px;
-}
+
 
 .number{
   font-weight: 700;
   font-size: 1.3rem;
   color: var(--white-main-heading-stats);
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
 @media (min-width:724px){
   main{
     display: flex;
-    
-    
   }
   .wrapper{
     display: flex;
@@ -153,8 +148,6 @@ article *{
   picture{
     order: 2;
     flex-basis: 50%;
-    
-    
   }
   /************************************************************
         i had an issue with image not resing well
@@ -175,12 +168,24 @@ article *{
     order: 1;
     padding: 20px;
     margin: 0;
-    justify-content: stretch;
+    justify-self: stretch;
+    padding: 2rem;
+    flex: 1;
+    flex-wrap: wrap;
+    
+  }
+  article *{
+    justify-items: stretch;
+    align-self: stretch;
   }
   .stats{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+  .stats-templates{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
