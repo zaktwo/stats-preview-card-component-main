@@ -159,6 +159,7 @@ article *{
 @media (min-width:724px){
   main{
     display: flex;
+    
   }
   .wrapper{
     display: flex;
@@ -212,5 +213,10 @@ article *{
   .stats-templates{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+@media (min-width: 1000px){
+  article{
+    padding: 3rem;
   }
 }
